@@ -1,0 +1,211 @@
+[
+  {
+    "title": "Sunny Meadow Cottage",
+    "description": "A spacious 5-bedroom family home in East Legon, within easy reach of the University of Ghana and major shopping. Secure compound and peaceful neighbourhood.",
+    "price": 6000,
+    "address": "12 Nii Okaiman Street, East Legon",
+    "city": "East Legon, Accra",
+    "country": "Ghana",
+    "image": "https://images.pexels.com/photos/7031406/pexels-photo-7031406.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "userEmail": "ama.kwakye@gmail.com",
+    "facilities": { "bathrooms": "2", "parking": "1", "bedrooms": "5" }
+  },
+  {
+    "title": "Coastal Breeze Villa",
+    "description": "A coastal villa with sweeping sea views near Labadi Beach. Close to restaurants and convenient access to the business district.",
+    "price": 8000,
+    "address": "5 Labadi Seafront, Labadi",
+    "city": "Labadi, Accra",
+    "country": "Ghana",
+    "image": "https://3.bp.blogspot.com/-84l-BoUL090/VTDHcQzSTNI/AAAAAAAAuHI/Khftta_CF5E/s1920/wow-home-design.jpg",
+    "facilities": { "bathrooms": "5", "parking": "1", "bedrooms": "4" },
+    "userEmail": "kofi.mensah@gmail.com"
+  },
+  {
+    "title": "Citralan Puri Serang",
+    "description": "Modern 4-bedroom residence in Ahodwo with a large compound and quick access to Kumasi city centre and Kumasi City Mall.",
+    "price": 3000,
+    "address": "22 Akwasi Prempeh Avenue, Ahodwo",
+    "city": "Ahodwo, Kumasi",
+    "country": "Ghana",
+    "image": "https://images.pexels.com/photos/323780/pexels-photo-323780.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "userEmail": "efua.adjei@gmail.com",
+    "facilities": { "bathrooms": "3", "parking": "1", "bedrooms": "2" }
+  },
+  {
+    "title": "Autumn Mist Cottage",
+    "description": "A charming 3-bedroom family home in Tema Community 18. Quiet street, well finished interiors and a neat compound.",
+    "price": 3800,
+    "address": "18 Kofi Nkrumah Crescent, Community 18",
+    "city": "Tema Community 18, Tema",
+    "country": "Ghana",
+    "image": "https://e0.pxfuel.com/wallpapers/12/377/desktop-wallpaper-beautiful-houses-beautiful-mansion.jpg",
+    "facilities": { "bathrooms": "2", "parking": "1", "bedrooms": "3" },
+    "userEmail": "yaw.boateng@gmail.com"
+  },
+  {
+    "title": "Rustic Pine Lodge",
+    "description": "A comfortable 4-bedroom home in Cape Coast — ideal for families looking for seaside living with easy access to town centers and schools.",
+    "price": 7050,
+    "address": "34 Anokye Street, Cape Coast",
+    "city": "Cape Coast",
+    "country": "Ghana",
+    "image": "https://images.pexels.com/photos/208736/pexels-photo-208736.jpeg",
+    "userEmail": "nana.owusu@gmail.com",
+    "facilities": { "bathrooms": "5", "parking": "1", "bedrooms": "4" }
+  },
+  {
+    "title": "Rolling Hills Retreat",
+    "description": "A serene 3-bedroom bungalow in Aburi with hillside views and cool climate — perfect for weekend retreats or remote work.",
+    "price": 2000,
+    "address": "3 Botanical Road, Aburi",
+    "city": "Aburi, Eastern Region",
+    "country": "Ghana",
+    "image": "https://www.hollywoodreporter.com/wp-content/uploads/2023/03/image_h_01-H-2023.jpg",
+    "facilities": { "bathrooms": "7", "parking": "2", "bedrooms": "10" },
+    "userEmail": "akua.danso@gmail.com"
+  },
+  {
+    "title": "Riverstone Manor",
+    "description": "Elegant 4-bedroom home in Sunyani with modern finishes and a secure compound, close to the main market and transport links.",
+    "price": 2000,
+    "address": "7 Baffour Akoto Street, Sunyani",
+    "city": "Sunyani Estates, Sunyani",
+    "country": "Ghana",
+    "image": "https://st.hzcdn.com/simgs/pictures/exteriors/builders-in-kochi-creo-homes-pvt-ltd-img~a751d25e0d2ef808_4-0254-1-cb5c87b.jpg",
+    "facilities": { "bathrooms": "5", "parking": "1", "bedrooms": "4" },
+    "userEmail": "belinda.asare@gmail.com"
+  },
+  {
+    "title": "Summerhill Estate",
+    "description": "Two-storey house located in Gumo, Tamale. Spacious rooms and a landscaped compound — convenient for professionals and families.",
+    "price": 2000,
+    "address": "16 Mahama Street, Gumo",
+    "city": "Gumo, Tamale",
+    "country": "Ghana",
+    "image": "https://i.pinimg.com/originals/89/56/5c/89565c305737e1da2a1a5b62600fbcd4.jpg",
+    "facilities": { "bathrooms": "2", "parking": "1", "bedrooms": "2" },
+    "userEmail": "hassan.abdulai@gmail.com"
+  },
+  {
+    "title": "Crimson Peak Chalet",
+    "description": "Beachfront-style 4-bedroom home in Prampram — ideal for beach lovers and short-stay rentals. Easy access to main coastal roads.",
+    "price": 2000,
+    "address": "25 Seaview Road, Prampram",
+    "city": "Prampram, Greater Accra",
+    "country": "Ghana",
+    "image": "https://cutewallpaper.org/24/house-images/1819611997.jpg",
+    "facilities": { "bathrooms": "3", "parking": "1", "bedrooms": "4" },
+    "userEmail": "richard.okyere@gmail.com"
+  },
+  {
+    "title": "Cedar Ridge Ranch",
+    "description": "A modern 3-bedroom family home in Ho with a spacious compound and contemporary finishes. Close to the Ho central market.",
+    "price": 2000,
+    "address": "19 Gbi Avenue, Ho Central",
+    "city": "Ho Central, Volta Region",
+    "country": "Ghana",
+    "image": "https://media.istockphoto.com/id/1184625380/photo/large-modern-expensive-home.jpg?s=612x612&w=0&k=20&c=TuX7dnAQvrxt02_BMnlgtVMMdvBLmh3gcXL1bPnobP8=",
+    "facilities": { "bathrooms": "5", "parking": "1", "bedrooms": "4" },
+    "userEmail": "maame.serwaa@gmail.com"
+  },
+  {
+    "title": "Modern Marvel Mansion",
+    "description": "Spacious modern mansion in Madina with premium finishes, large compound and convenient access to Accra-North transport links.",
+    "price": 2000,
+    "address": "12 Liberation Road, Madina",
+    "city": "Madina, Accra",
+    "country": "Ghana",
+    "image": "https://res.cloudinary.com/dkg6ajfen/image/upload/v1683804284/jlap7xq7owdsfb4tlsyt.png",
+    "facilities": { "bedrooms": 12, "parkings": 2, "bathrooms": 3 },
+    "userEmail": "kwame.adomako@gmail.com"
+  },
+  {
+    "title": "Whispering Willow Estate",
+    "description": "Comfortable 4-bedroom family home in Kasoa, ideal for growing families — close to markets and schools with easy Accra access.",
+    "price": 4000,
+    "address": "8 Market Road, Kasoa",
+    "city": "Kasoa, Central Region",
+    "country": "Ghana",
+    "image": "https://images.pexels.com/photos/1127119/pexels-photo-1127119.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "userEmail": "selina.ankrah@gmail.com",
+    "facilities": { "bathrooms": "4", "parking": "1", "bedrooms": "4" }
+  },
+  {
+    "title": "Blue Horizon Manor",
+    "description": "A well-appointed 3-bedroom house in Santasi, Kumasi. Quiet residential area with great neighbourhood amenities.",
+    "price": 2500,
+    "address": "7 Kwadwo Street, Santasi",
+    "city": "Santasi, Kumasi",
+    "country": "Ghana",
+    "image": "https://images.pexels.com/photos/1396132/pexels-photo-1396132.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "userEmail": "paul.nyarko@gmail.com",
+    "facilities": { "bathrooms": "2", "parking": "1", "bedrooms": "3" }
+  },
+  {
+    "title": "Golden Fields Ranch",
+    "description": "A 4-bedroom family home in Dansoman with a large compound and good road access — ideal for families and small businesses.",
+    "price": 4000,
+    "address": "20 Saka Street, Dansoman",
+    "city": "Dansoman, Accra",
+    "country": "Ghana",
+    "image": "https://lovehomedesigns.com/wp-content/uploads/2022/01/cute-house-012522.jpg",
+    "facilities": { "bathrooms": "5", "parking": "1", "bedrooms": "4" },
+    "userEmail": "nana.amoah@gmail.com"
+  },
+  {
+    "title": "Asatti Garden City",
+    "description": "A modest 3-bedroom home in Adenta — good value for families working in Accra North, with quick access to the N4.",
+    "price": 2000,
+    "address": "5 Adenta New Road, Adenta",
+    "city": "Adenta, Accra",
+    "country": "Ghana",
+    "image": "https://images.pexels.com/photos/106399/pexels-photo-106399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    "userEmail": "francis.tetteh@gmail.com",
+    "facilities": { "bathrooms": "2", "parking": "2", "bedrooms": "10" }
+  },
+  {
+    "title": "Jansheen villan",
+    "description": "A deluxe 4-bedroom villa in Kwadaso, Kumasi with modern fittings and a large compound — suitable for large families.",
+    "price": 8000,
+    "address": "9 Kwadaso Lane, Kwadaso",
+    "city": "Kwadaso, Kumasi",
+    "country": "Ghana",
+    "image": "https://res.cloudinary.com/dkg6ajfen/image/upload/v1683804284/jlap7xq7owdsfb4tlsyt.png",
+    "facilities": { "bedrooms": 12, "parkings": 2, "bathrooms": 3 },
+    "userEmail": "abena.kusi@gmail.com"
+  },
+  {
+    "title": "The Johnson Palace",
+    "description": "Well-located 2-bedroom home in Airport Residential Area, close to Kotoka International Airport and major embassies.",
+    "price": 5000,
+    "address": "3 Airport Residential Crescent, Airport Residential Area",
+    "city": "Airport Residential Area, Accra",
+    "country": "Ghana",
+    "image": "https://res.cloudinary.com/dkg6ajfen/image/upload/v1683892030/eb99xugad9w3pswx7h3f.jpg",
+    "facilities": { "bedrooms": 2, "parkings": 3, "bathrooms": 2 },
+    "userEmail": "kwasi.johnson@gmail.com"
+  },
+  {
+    "title": "ZKC Villa",
+    "description": "A modern 5-bedroom home in Tanoso with large rooms and a well-kept garden. Close to Tanoso market and main transport links.",
+    "price": 5000,
+    "address": "18 Tanoso Road, Tanoso",
+    "city": "Tanoso, Kumasi",
+    "country": "Ghana",
+    "image": "https://res.cloudinary.com/dkg6ajfen/image/upload/v1684045778/zdc3pb1d0kgfwxuk8hch.jpg",
+    "facilities": { "bedrooms": 5, "parkings": 2, "bathrooms": 3 },
+    "userEmail": "kweku.badu@gmail.com"
+  },
+  {
+    "title": "Beautiful House",
+    "description": "Spacious and well-finished 5-bedroom home in Labone, within easy reach of Oxford Street and major dining options.",
+    "price": 10000,
+    "address": "11 Labone Crescent, Labone",
+    "city": "Labone, Accra",
+    "country": "Ghana",
+    "image": "https://res.cloudinary.com/dkg6ajfen/image/upload/v1686773421/ihdmmu9mjsors2rvlu4j.png",
+    "facilities": { "bedrooms": 5, "parkings": 5, "bathrooms": 8 },
+    "userEmail": "selasie.nartey@gmail.com"
+  }
+]
