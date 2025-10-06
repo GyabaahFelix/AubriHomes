@@ -8,31 +8,29 @@ datasource db {
 }
 
 model User {
-    id            String   @id @default(auto()) @map("_id") @db.ObjectId
-    name          String?
-    email         String   @unique
-    image         String?
-    bookedVisits  Json[]
-    favResidencesID String[] @db.ObjectId
+    id               String      @id @default(auto()) @map("_id") @db.ObjectId
+    name             String?
+    email            String      @unique
+    image            String?
+    bookedVisits     Json[]
+    favResidenciesID String[]    @db.ObjectId
     ownedResidencies Residency[] @relation("Owner")
 }
 
 model Residency {
-    id           String   @id @default(auto()) @map("_id") @db.ObjectId
-    title        String
-    description  String
-    price        Float
-    address      String
-    city         String
-    coutry       String
-    image        String[]
-    facilities   String[]
-    userEmail    String
-    owner        User     @relation(fields: [userEmail], references: [email])
-    createdAt    DateTime @default(now())
-    updatedAt    DateTime @updatedAt
-    bookedVisits Json[]
-    favoritedBy  String[] @db.ObjectId
+    id          String   @id @default(auto()) @map("_id") @db.ObjectId
+    title       String
+    description String
+    price       Int
+    address     String
+    city        String
+    country     String
+    image       String
+    facilities  Json
+    userEmail   String
+    owner       User     @relation("Owner", fields: [userEmail], references: [email])
+    createdAt   DateTime @default(now())
+    updatedAt   DateTime @updatedAt
 
-    User User[] @relation("Owner")
+    @@unique(fields: [address, userEmail])
 }
