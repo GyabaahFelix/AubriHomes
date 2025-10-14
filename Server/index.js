@@ -15,7 +15,7 @@ app.use(cookieParser())
 app.use(cors())
 
 app.listen(PORT, ()=> {
-    console.log(`Server is running on port ${PORT}`);
+    console.log(`Server is running smoothly on port ${PORT}`);
 });
 
 app.use('/api/user', userRoute)
