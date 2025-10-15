@@ -29,8 +29,8 @@ model Residency {
     facilities  Json
     userEmail   String
     owner       User     @relation("Owner", fields: [userEmail], references: [email])
-    createdAt   DateTime @default(now())
-    updatedAt   DateTime @updatedAt
+    createdAt   DateTime? @default(now())   // ✅ optional
+    updatedAt   DateTime? @updatedAt        // ✅ optional
 
     @@unique(fields: [address, userEmail])
 }
