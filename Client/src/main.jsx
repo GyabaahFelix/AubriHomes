@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
      domain="dev-tui7shzynevuby51.us.auth0.com"
      clientId="6R1kwOKsm4lLUquNFddGXTha0E0ce3G7"
      authorizationParams={{
-      redirect_uri: "https://aubri-homes.vercel.app"
+      redirect_uri: "https://aubri-homes-server.vercel.app"
      }}
      audience="http://localhost:8000"
      scope="openid profile email"
