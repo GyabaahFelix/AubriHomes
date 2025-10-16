@@ -19,7 +19,7 @@ const Footer = () => {
           {/* Brand Section */}
           <div className="footer-brand">
             <img
-              src="./../../../public/xivha-logo.png"
+              src="/xivha-logo.png"
               alt="XivhaWorld Logo"
               className="footer-logo"
             />
