@@ -1,25 +1,23 @@
 import { HiShieldCheck } from "react-icons/hi";
 import { MdCancel, MdAnalytics } from "react-icons/md";
-
 const data = [
   {
-    icon: <HiShieldCheck />,
-    heading: "Trusted and Secure Deals",
+    icon: <HiShieldCheck/>,
+    heading: "Best interest rates on the market",
     detail:
-      "At AubriHomes, every property transaction is verified and transparent — ensuring your investments are always protected and stress-free.",
+      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
   },
   {
     icon: <MdCancel />,
-    heading: "No Hidden Fees or Surprises",
+    heading: "Prevent unstable prices",
     detail:
-      "We value honesty. All property prices and fees are clearly stated upfront, giving you confidence and full control of your purchase or rental process.",
+      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
   },
   {
     icon: <MdAnalytics />,
-    heading: "Smart Market Insights",
+    heading: "Best price on the market",
     detail:
-      "Gain access to expert-driven analytics and up-to-date housing trends, helping you make informed decisions and secure the best possible deals.",
+      "Exercitation in fugiat est ut ad ea cupidatat ut in cupidatat occaecat ut occaecat consequat est minim minim esse tempor laborum consequat esse adipisicing eu reprehenderit enim.",
   },
 ];
-
 export default data;
