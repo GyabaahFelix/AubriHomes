@@ -2,85 +2,86 @@ import React from "react";
 import "./Contact.css";
 import { MdCall } from "react-icons/md";
 import { BsFillChatDotsFill } from "react-icons/bs";
-import {HiChatBubbleBottomCenter} from 'react-icons/hi2'
+import { HiChatBubbleBottomCenter } from "react-icons/hi2";
+
 const Contact = () => {
   return (
     <div id="contact-us" className="c-wrapper">
       <div className="paddings innerWidth flexCenter c-container">
-        {/* left side */}
+        {/* Left side */}
         <div className="flexColStart c-left">
-          <span className="orangeText">Our Contact Us</span>
-          <span className="primaryText">Easy to contact us</span>
+          <span className="orangeText">Contact Us</span>
+          <span className="primaryText">Get in Touch with AubriHomes</span>
           <span className="secondaryText">
-            We always ready to help by providijng the best services for you. We
-            beleive a good blace to live can make your life better{" "}
+            We’re always ready to assist you in finding your dream property.
+            Reach out to us easily through any of the options below.
           </span>
 
           <div className="flexColStart contactModes">
-            {/* first row */}
+            {/* First Row */}
             <div className="flexStart row">
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <MdCall size={25} />
+                    <MdCall size={20} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Call</span>
-                    <span className="secondaryText">024 540 2719</span>
+                    <span className="primaryText small">Call</span>
+                    <span className="secondaryText small">024 540 2719</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Call now</div>
+                <div className="flexCenter button">Call Now</div>
               </div>
 
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
+                    <BsFillChatDotsFill size={20} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Chat</span>
-                    <span className="secondaryText">024 540 2719</span>
+                    <span className="primaryText small">Chat</span>
+                    <span className="secondaryText small">024 540 2719</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Chat now</div>
+                <div className="flexCenter button">Chat Us</div>
               </div>
             </div>
 
-            {/* second row */}
+            {/* Second Row */}
             <div className="flexStart row">
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <BsFillChatDotsFill size={25} />
+                    <BsFillChatDotsFill size={20} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Video Call</span>
-                    <span className="secondaryText">024 540 2719</span>
+                    <span className="primaryText small">Video Call</span>
+                    <span className="secondaryText small">024 540 2719</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Video Call now</div>
+                <div className="flexCenter button">Video Call</div>
               </div>
 
               <div className="flexColCenter mode">
                 <div className="flexStart">
                   <div className="flexCenter icon">
-                    <HiChatBubbleBottomCenter size={25} />
+                    <HiChatBubbleBottomCenter size={20} />
                   </div>
                   <div className="flexColStart detail">
-                    <span className="primaryText">Message</span>
-                    <span className="secondaryText">024 540 2719</span>
+                    <span className="primaryText small">Message</span>
+                    <span className="secondaryText small">024 540 2719</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Message now</div>
+                <div className="flexCenter button">Message</div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* right side */}
+        {/* Right side */}
         <div className="flexEnd c-right">
           <div className="image-container">
-            <img src="./contact.jpg" alt="" />
+            <img src="./contact.jpg" alt="Contact AubriHomes" />
           </div>
         </div>
       </div>
