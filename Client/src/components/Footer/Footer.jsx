@@ -1,30 +1,83 @@
 import React from "react";
+import {
+  Facebook,
+  Twitter,
+  Instagram,
+  Mail,
+  MapPin,
+  Phone,
+} from "lucide-react";
 import "./Footer.css";
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
-    <div className="f-wrapper">
-      <div className="paddings innerWidth flexCenter f-container">
-        {/* left side */}
-        <div className="flexColStart f-left">
-          <img src="./logo2.png" alt="" width={120} />
-          <span className="secondaryText">
-            Our vision is to make all people <br />
-            the best place to live for them.
-          </span>
-        </div>
+    <footer className="footer-wrapper">
+      <div className="footer-container">
+        {/* Top Section */}
+        <div className="footer-top">
+          {/* Brand Section */}
+          <div className="footer-brand">
+            <img
+              src="./../../../public/xivha-logo.png"
+              alt="XivhaWorld Logo"
+              className="footer-logo"
+            />
+            <p className="footer-description">
+              <strong>XivhaWorld</strong> — Empowering Ghanaians to find
+              beautiful homes and spaces with ease. Discover comfort, community,
+              and quality living — the <span>XivhaWorld</span> way.
+            </p>
+          </div>
 
-        <div className="flexColStart f-right">
-          <span className="primaryText">Information</span>
-          <span className="secondaryText">145 New York, FL 5467, USA</span>
-          <div className="flexCenter f-menu">
-            <span>Property</span>
-            <span>Services</span>
-            <span>Product</span>
-            <span>About Us</span>
+          {/* Links Section */}
+          <div className="footer-links">
+            <h3>Explore</h3>
+            <ul>
+              <li>
+                <Link to="/properties">Residencies</Link>
+              </li>
+              <li>
+                <Link to="/services">Services</Link>
+              </li>
+              <li>
+                <Link to="/about">About Us</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact</Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact Section */}
+          <div className="footer-contact">
+            <h3>Contact Us</h3>
+            <p>
+              <MapPin size={18} className="icon" /> Accra, Ghana
+            </p>
+            <p>
+              <Phone size={18} className="icon" /> +233 24 540 2719
+            </p>
+            <p>
+              <Mail size={18} className="icon" /> support@xivhaworld.com
+            </p>
+            <div className="footer-socials">
+              <Facebook className="social-icon" />
+              <Twitter className="social-icon" />
+              <Instagram className="social-icon" />
+            </div>
           </div>
         </div>
+
+        {/* Bottom Section */}
+        <div className="footer-bottom">
+          <p>
+            © {new Date().getFullYear()} <strong>XivhaWorld</strong> — Built
+            with ❤️ in Ghana.
+          </p>
+        </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
