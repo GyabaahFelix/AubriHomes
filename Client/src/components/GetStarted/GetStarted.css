@@ -1,22 +1,107 @@
-.inner-container{
-    gap: 1.5rem;
-    background: #4161df;
-    padding: 2rem;
-    border-radius: 10px;
-    border: 6px solid #5d77d6;
-    text-align: center;
+.g-wrapper {
+  padding: 4rem 2rem;
+  position: relative;
+  background: linear-gradient(120deg, #ffe3c2, #f0fff4);
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
 }
 
-.inner-container .primaryText{
-    color: white;
-    font-weight: 600;
+.inner-container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 3rem 3rem;
+  border-radius: 2rem;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
 }
-.inner-container .secondaryText{
-    color: rgba(255, 255, 255, 0.587);
+
+.primaryText {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
 }
-.inner-container .button {
-    background: #5a73d7;
-    border: 2px solid white;
-    box-shadow: var(--shadow);
-    border-radius: 10px;
+
+.primaryText .highlight {
+  background: linear-gradient(90deg, #ff6b00, #ff9e00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secondaryText {
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.8rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #ff6b00;
+  border: 2px solid #ff6b00;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #ff9e00;
+  border-color: #ff9e00;
+  transform: scale(1.05);
+}
+
+/* Decorative Circle */
+.circle-bg {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 107, 0, 0.15);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .inner-container {
+    padding: 2.5rem 2rem;
+  }
+
+  .primaryText {
+    font-size: 1.8rem;
+  }
+
+  .secondaryText {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner-container {
+    padding: 2rem 1rem;
+  }
+
+  .primaryText {
+    font-size: 1.5rem;
+  }
+
+  .secondaryText {
+    font-size: 0.9rem;
+  }
+
+  .circle-bg {
+    width: 100px;
+    height: 100px;
+    top: -5%;
+    right: -2%;
+  }
 }

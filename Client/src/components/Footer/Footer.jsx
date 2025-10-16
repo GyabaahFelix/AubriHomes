@@ -7,8 +7,8 @@ import {
   MapPin,
   Phone,
 } from "lucide-react";
-import "./Footer.css";
 import { Link } from "react-router-dom";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -30,10 +30,13 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Links Section */}
-          <div className="footer-links">
+          {/* Explore Section */}
+          <div className="footer-explore">
             <h3>Explore</h3>
             <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
               <li>
                 <Link to="/properties">Residencies</Link>
               </li>

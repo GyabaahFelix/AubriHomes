@@ -39,7 +39,7 @@
 /* --- TOP SECTION --- */
 .footer-top {
   display: flex;
-  justify-content: space-between; /* Ensures left, middle, right alignment */
+  justify-content: space-between; /* Left, center, right */
   align-items: flex-start;
   gap: 3rem;
 }
@@ -47,32 +47,72 @@
 /* --- BRAND SECTION --- */
 .footer-brand {
   display: block;
-  max-width: 370px;
+  max-width: 350px;
   color: #444;
   line-height: 1.7;
 }
 
 .footer-logo {
   float: left;
-  width: 10rem;
-  height: 11rem;
+  width: 100px;
+  height: 110px;
   border-radius: 10px;
   margin: 0 1rem 0.5rem 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 .footer-description {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-align: justify;
 }
 
 .footer-description span {
   font-weight: 600;
-  color: #006400;
+  color: #e61111;
 }
 
-/* --- LINKS SECTION --- */
-.footer-links h3,
+/* --- EXPLORE SECTION --- */
+.footer-explore h3 {
+  color: #222;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+  font-size: 1.05rem;
+  position: relative;
+}
+
+.footer-explore h3::after {
+  content: "";
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  width: 2rem;
+  height: 2px;
+  background-color: #ff6b00;
+  border-radius: 10px;
+}
+
+.footer-explore ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.footer-explore li {
+  margin: 0.5rem 0;
+}
+
+.footer-explore li a {
+  color: #555;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-explore li a:hover {
+  color: #ff6b00;
+  transform: translateX(5px);
+}
+
+/* --- CONTACT SECTION --- */
 .footer-contact h3 {
   color: #222;
   margin-bottom: 0.8rem;
@@ -81,7 +121,6 @@
   position: relative;
 }
 
-.footer-links h3::after,
 .footer-contact h3::after {
   content: "";
   position: absolute;
@@ -93,25 +132,6 @@
   border-radius: 10px;
 }
 
-.footer-links ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 1rem;
-}
-
-.footer-links li {
-  color: #555;
-  margin: 0.5rem 0;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.footer-links li:hover {
-  color: #ff6b00;
-  transform: translateX(5px);
-}
-
-/* --- CONTACT SECTION --- */
 .footer-contact p {
   color: #555;
   display: flex;
@@ -134,7 +154,7 @@
 .footer-socials {
   display: flex;
   gap: 1rem;
-  margin-top: 1.2rem;
+  margin-top: 1rem;
 }
 
 .social-icon {
@@ -159,12 +179,6 @@
 }
 
 /* --- RESPONSIVENESS --- */
-@media (max-width: 1024px) {
-  .footer-top {
-    gap: 2rem;
-  }
-}
-
 @media (max-width: 900px) {
   .footer-top {
     flex-direction: column;
@@ -185,11 +199,9 @@
     margin: 0 auto;
   }
 
-  .footer-contact p {
-    justify-content: center;
-  }
-
-  .footer-socials {
+  .footer-socials,
+  .footer-contact p,
+  .footer-explore ul {
     justify-content: center;
   }
 }
@@ -200,14 +212,10 @@
   }
 
   .footer-description {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .footer-container {
     padding: 0 1rem;
-  }
-
-  .footer-top {
-    gap: 1.8rem;
   }
 }
