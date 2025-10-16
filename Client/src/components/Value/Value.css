@@ -1,57 +1,183 @@
-.v-container .image-container {
-  border: 8px solid rgb(232 232 232 / 93%);
+/* ===== Scoped Value Section ===== */
+.value-wrapper {
+  background: linear-gradient(120deg, #fff, #fff9f5);
+  padding: 4rem 2rem;
+  font-family: "Poppins", sans-serif;
 }
-.v-container > div {
-  flex: 1;
+
+.value-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
-.v-right {
-  gap: 0.5rem;
+
+/* Left Image */
+.value-left {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: center;
 }
-.accordion {
+
+.value-image {
+  width: 100%;
+  max-width: 28rem;
+  border: 6px solid rgba(232, 232, 232, 0.9);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(255, 107, 0, 0.1);
+}
+
+.value-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.value-image img:hover {
+  transform: scale(1.03);
+}
+
+/* Right Content */
+.value-right {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.value-orangeText {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.value-primaryText {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.value-secondaryText {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Accordion */
+.value-accordion {
   margin-top: 2rem;
   border: none;
 }
-.accordionItem {
-  background: white;
-  border: 0.8px solid rgba(128, 128, 128, 0.143);
+
+.value-accordionItem {
+  background: #fff;
+  border: 1px solid rgba(128, 128, 128, 0.15);
   border-radius: 8px;
+  margin-bottom: 1rem;
   overflow: hidden;
-  margin-bottom: 20px;
+  transition: all 0.3s ease;
 }
 
-.accordionItem.expanded {
-  box-shadow: var(--shadow);
-  border-radius: 6px;
+.value-accordionItem.value-expanded {
+  box-shadow: 0 5px 20px rgba(255, 107, 0, 0.15);
 }
-.accordionButton {
-  background: white;
-  padding: 1rem;
-  width: 100%;
+
+.value-accordionButton {
+  background: #fff;
+  padding: 0.9rem 1.2rem;
+  display: flex;
+  align-items: center;
   justify-content: space-between;
   cursor: pointer;
+  width: 100%;
 }
 
-.icon {
-  padding: 10px;
-  background: #eeeeff;
-  border-radius: 5px;
-}
-.icon svg {
-  fill: var(--blue);
-}
-
-.accordionButton .primaryText{
-    font-size: 1.1rem;
+.value-icon {
+  background: rgba(255, 107, 0, 0.1);
+  border-radius: 6px;
+  padding: 8px;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.value-heading {
+  flex: 1;
+  margin: 0 0.8rem;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #333;
+}
+
+.value-detail {
+  padding: 1rem 1.2rem;
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* ===== Responsive ===== */
 @media (max-width: 1024px) {
-    .v-container{
-        flex-direction: column;
-    }
+  .value-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .value-right {
+    align-items: center;
+  }
+
+  .value-primaryText {
+    font-size: 1.9rem;
+  }
+
+  .value-secondaryText {
+    font-size: 0.95rem;
+  }
 }
 
 @media (max-width: 768px) {
-    .accordionButton .primaryText{
-        font-size: .8rem;
-    }
+  .value-primaryText {
+    font-size: 1.6rem;
+  }
+
+  .value-heading {
+    font-size: 0.9rem;
+  }
+
+  .value-detail {
+    font-size: 0.85rem;
+  }
+
+  .value-image {
+    max-width: 22rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .value-wrapper {
+    padding: 3rem 1rem;
+  }
+
+  .value-primaryText {
+    font-size: 1.4rem;
+  }
+
+  .value-secondaryText {
+    font-size: 0.9rem;
+  }
+
+  .value-heading {
+    font-size: 0.85rem;
+  }
+
+  .value-detail {
+    font-size: 0.8rem;
+  }
 }

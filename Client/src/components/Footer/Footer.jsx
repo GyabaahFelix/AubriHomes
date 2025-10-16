@@ -20,13 +20,13 @@ const Footer = () => {
           <div className="footer-brand">
             <img
               src="/xivha-logo.png"
-              alt="XivhaWorld Logo"
+              alt="AubriHomes Logo"
               className="footer-logo"
             />
             <p className="footer-description">
-              <strong>XivhaWorld</strong> — Empowering Ghanaians to find
+              <strong>AubriHomes</strong> — Empowering Ghanaians to find
               beautiful homes and spaces with ease. Discover comfort, community,
-              and quality living — the <span>XivhaWorld</span> way.
+              and quality living — the <span>AubriHomes</span> way.
             </p>
           </div>
 
@@ -62,7 +62,7 @@ const Footer = () => {
               <Phone size={18} className="icon" /> +233 24 540 2719
             </p>
             <p>
-              <Mail size={18} className="icon" /> support@xivhaworld.com
+              <Mail size={18} className="icon" /> support@aubriHomes.com
             </p>
             <div className="footer-socials">
               <Facebook className="social-icon" />
@@ -75,7 +75,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="footer-bottom">
           <p>
-            © {new Date().getFullYear()} <strong>XivhaWorld</strong> — Built
+            © {new Date().getFullYear()} <strong>AubriHomes</strong> — Built
             with ❤️ in Ghana.
           </p>
         </div>
