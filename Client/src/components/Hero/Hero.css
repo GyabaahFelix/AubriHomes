@@ -1,9 +1,9 @@
 .hero-wrapper {
   padding: 4rem 2rem 2rem;
   position: relative;
-  background: linear-gradient(120deg, #ffe3c2, #f0fff4);
+  background: linear-gradient(120deg, #ffe3c2, #fff8f2);
   overflow: hidden;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-container {
@@ -11,13 +11,14 @@
   justify-content: space-between;
   align-items: center;
   gap: 3rem;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
+  flex-wrap: nowrap;
 }
 
 /* Left Side */
 .hero-left {
-  flex: 1;
+  flex: 1 1 50%;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -31,7 +32,7 @@
 }
 
 .hero-title .highlight {
-  background: linear-gradient(90deg, #ff6b00, #ff9e00);
+  background: linear-gradient(90deg, #ff5b00, #ff8f3c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -53,6 +54,7 @@
   display: flex;
   gap: 2.5rem;
   margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
 .stat span {
@@ -69,20 +71,21 @@
 
 /* Right Side */
 .hero-right {
-  flex: 1;
+  flex: 1 1 45%;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   position: relative;
 }
 
 .image-container {
-  margin-right: -15rem;
   position: relative;
-  width: 35rem;
-  height: 35rem;
+  width: 100%;
+  max-width: 34rem;
+  aspect-ratio: 1/1;
   border-radius: 2rem;
   overflow: hidden;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.2);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  transform: translateX(8%);
 }
 
 .image-container img {
@@ -95,36 +98,98 @@
 .circle-bg {
   position: absolute;
   top: -5%;
-  right: -10%;
+  right: -8%;
   width: 150px;
   height: 150px;
-  background: rgba(255,107,0,0.15);
+  background: rgba(255, 107, 0, 0.15);
   border-radius: 50%;
 }
 
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
+/* Animated brand name */
+.brand-name {
+  color: #ff5b00;
+  font-weight: 800;
+  font-size: 3.8rem;
+  letter-spacing: 1px;
+  text-shadow: 1px 2px 6px rgba(255, 107, 0, 0.3);
+  display: inline-block;
+}
+
+/* Medium Screens */
+@media (max-width: 1024px) {
   .hero-container {
-    flex-direction: column-reverse;
-    align-items: center;
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .hero-title h1 {
-    font-size: 2.5rem;
-  }
-
-  .hero-right {
-    width: 100%;
+    font-size: 3rem;
   }
 
   .image-container {
-    width: 90%;
-    height: 22rem;
+    max-width: 30rem;
+    transform: translateX(4%);
+  }
+}
+
+/* Tablets (side-by-side layout retained) */
+@media (max-width: 900px) {
+  .hero-container {
+    flex-wrap: nowrap;
+    gap: 2rem;
+  }
+
+  .hero-left {
+    flex: 1 1 55%;
+  }
+
+  .hero-right {
+    flex: 1 1 45%;
+  }
+
+  .hero-title h1 {
+    font-size: 2.7rem;
+  }
+
+  .image-container {
+    max-width: 26rem;
+    transform: translateX(2%);
+  }
+}
+
+/* Mobile (stack layout) */
+@media (max-width: 600px) {
+  .hero-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-wrapper {
+    padding: 3rem 1rem 2rem;
+  }
+
+  .hero-title h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-title p {
+    font-size: 1rem;
+  }
+
+  .image-container {
+    width: 100%;
+    aspect-ratio: 1/1.1;
+    max-width: 30rem;
+    transform: none;
   }
 
   .hero-stats {
-    justify-content: center;
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .stat span {
+    font-size: 1.6rem;
   }
 }

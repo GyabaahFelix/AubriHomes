@@ -13,22 +13,34 @@ const Hero = () => {
             className="hero-title"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut" }}
+            transition={{ duration: 1.2, ease: "easeOut" }}
           >
             <h1>
-              Find Your <span className="highlight">Dream</span> <br />
-              Home or <span className="highlight">Space</span>
+              Find Your Dream Home with <span className="highlight"></span> {" "}
+              <motion.span
+                className="brand-name"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{
+                  duration: 1.5,
+                  ease: [0.25, 0.1, 0.25, 1],
+                  delay: 0.5,
+                }}
+              >
+                AubriHomes
+              </motion.span>
             </h1>
+
             <p>
-              Browse premium residencies across Ghana. Comfort, style, and
-              convenience — all in one place.
+              Browse premium residencies across Ghana and Ivory Coast. Comfort,
+              style, and convenience — all in one place.
             </p>
           </motion.div>
 
           <motion.div
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut", delay: 0.3 }}
+            transition={{ duration: 1.2, ease: "easeOut", delay: 0.3 }}
             className="hero-search"
           >
             <SearchBar />
@@ -38,7 +50,7 @@ const Hero = () => {
             className="hero-stats"
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            transition={{ duration: 1.5, ease: "easeOut", delay: 0.6 }}
+            transition={{ duration: 1.2, ease: "easeOut", delay: 0.6 }}
           >
             <div className="stat">
               <span>
