@@ -2,22 +2,24 @@ import React from "react";
 import "./Contact.css";
 import { MdCall } from "react-icons/md";
 import { BsFillChatDotsFill } from "react-icons/bs";
-import {HiChatBubbleBottomCenter} from 'react-icons/hi2'
+import { HiChatBubbleBottomCenter } from "react-icons/hi2";
+
 const Contact = () => {
   return (
-    <div id="contact-us" className="c-wrapper">
+    <section id="contact-us" className="c-wrapper">
       <div className="paddings innerWidth flexCenter c-container">
-        {/* left side */}
+        {/* Left Side */}
         <div className="flexColStart c-left">
-          <span className="orangeText">Our Contact Us</span>
-          <span className="primaryText">Easy to contact us</span>
+          <span className="orangeText">Contact Us</span>
+          <span className="primaryText">We’re Here to Help You</span>
           <span className="secondaryText">
-            We always ready to help by providijng the best services for you. We
-            beleive a good blace to live can make your life better{" "}
+            Whether you’re buying, renting, or listing a property, our team at
+            <strong> AubriHomes</strong> is always ready to assist. Let’s make
+            your home journey easy and stress-free.
           </span>
 
           <div className="flexColStart contactModes">
-            {/* first row */}
+            {/* First Row */}
             <div className="flexStart row">
               <div className="flexColCenter mode">
                 <div className="flexStart">
@@ -29,7 +31,7 @@ const Contact = () => {
                     <span className="secondaryText">024 540 2719</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Call now</div>
+                <div className="flexCenter button">Call Now</div>
               </div>
 
               <div className="flexColCenter mode">
@@ -42,11 +44,11 @@ const Contact = () => {
                     <span className="secondaryText">024 540 2719</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Chat now</div>
+                <div className="flexCenter button">Chat Now</div>
               </div>
             </div>
 
-            {/* second row */}
+            {/* Second Row */}
             <div className="flexStart row">
               <div className="flexColCenter mode">
                 <div className="flexStart">
@@ -58,7 +60,7 @@ const Contact = () => {
                     <span className="secondaryText">024 540 2719</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Video Call now</div>
+                <div className="flexCenter button">Start Video Call</div>
               </div>
 
               <div className="flexColCenter mode">
@@ -71,20 +73,20 @@ const Contact = () => {
                     <span className="secondaryText">024 540 2719</span>
                   </div>
                 </div>
-                <div className="flexCenter button">Message now</div>
+                <div className="flexCenter button">Send Message</div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* right side */}
+        {/* Right Side */}
         <div className="flexEnd c-right">
           <div className="image-container">
-            <img src="./contact.jpg" alt="" />
+            <img src="/contact.jpg" alt="Contact AubriHomes" />
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

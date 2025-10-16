@@ -24,9 +24,9 @@ const Footer = () => {
               className="footer-logo"
             />
             <p className="footer-description">
-              <strong>XivhaWorld</strong> — Empowering Ghanaians to find
+              <strong>AubriHomes</strong> — Empowering Ghanaians to find
               beautiful homes and spaces with ease. Discover comfort, community,
-              and quality living — the <span>XivhaWorld</span> way.
+              and quality living — the <span>AubriHomes</span> way.
             </p>
           </div>
 

@@ -7,7 +7,7 @@ const GetStarted = () => {
       <div className="paddings innerWidth g-container">
         <div className="inner-container">
           <span className="primaryText">
-            Start Your Journey with <strong className="highlight">XivhaWorld</strong>
+            Start Your Journey with <strong className="highlight">AubriHomes</strong>
           </span>
           <p className="secondaryText">
             Subscribe now and get exclusive property offers.

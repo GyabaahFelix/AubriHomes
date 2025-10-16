@@ -1,75 +1,167 @@
+.c-wrapper {
+  background: linear-gradient(120deg, #fff7f1, #fff);
+  padding: 4rem 2rem;
+  font-family: 'Poppins', sans-serif;
+}
+
 .c-container {
+  display: flex;
   justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
-.c-container > div {
-  flex: 1;
-}
-.c-right {
-  width: 100%;
-}
+
+/* Left Side */
 .c-left {
-  gap: 0.5rem;
-}
-.contactModes {
-  margin-top: 2rem;
-  gap: 1rem;
-}
-.contactModes .row {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
 }
-.mode {
-  width: 16rem;
-  padding: 1rem;
-  border: 0.8px solid rgba(128, 128, 128, 0.143);
-  border-radius: 5px;
-  gap: 1rem;
-  transition: all 300ms ease-in;
-}
-.mode .button {
-  width: 100%;
-  background: var(--lightBlue);
-  color: var(--blue);
-  font-size: 0.9rem;
+
+.orangeText {
+  color: var(--primary);
   font-weight: 600;
-}
-.mode > :nth-child(1) {
-  width: 100%;
-  gap: 1.6rem;
-}
-.mode .detail .primaryText {
   font-size: 1.1rem;
-  font-weight: 600;
+}
+
+.primaryText {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.secondaryText {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Contact Modes */
+.contactModes {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.row {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.mode {
+  background: #fff;
+  border: 1px solid #f1f1f1;
+  border-radius: 12px;
+  padding: 1rem 1.5rem;
+  width: 250px;
+  box-shadow: 0 6px 20px rgba(255, 107, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .mode:hover {
-  scale: 1.1;
-  box-shadow: var(--shadow);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(255, 107, 0, 0.2);
 }
 
-.mode .button:hover {
-  background: var(--blue-gradient);
-  color: white;
-  scale: 0.8;
+.icon {
+  background: rgba(255, 107, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  color: var(--primary);
 }
 
-@media (max-width: 1024px) {
+.detail .primaryText {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.detail .secondaryText {
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.button {
+  background: var(--primary);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-top: 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  background: #e55a00;
+  transform: scale(1.05);
+}
+
+/* Right Side */
+.c-right {
+  flex: 1 1 45%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image-container {
+  width: 100%;
+  max-width: 28rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(255, 107, 0, 0.15);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
   .c-container {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    text-align: center;
   }
-  .c-right {
+
+  .c-left {
+    align-items: center;
+  }
+
+  .row {
     justify-content: center;
   }
+
+  .primaryText {
+    font-size: 2rem;
+  }
+
+  .image-container {
+    max-width: 22rem;
+  }
 }
-@media (max-width: 1024px)
-{
-    .contactModes{
-        width: 100%;
-    }
-    .row{
-        flex-direction: column;
-        width: 100%;
-    }
-    .mode{
-        width: 100%;
-    }
+
+@media (max-width: 600px) {
+  .mode {
+    width: 100%;
+  }
+
+  .primaryText {
+    font-size: 1.8rem;
+  }
+
+  .secondaryText {
+    font-size: 0.95rem;
+  }
 }
