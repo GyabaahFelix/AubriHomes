@@ -76,8 +76,9 @@
 }
 
 .image-container {
+  margin-right: -20rem;
   position: relative;
-  width: 28rem;
+  width: 35rem;
   height: 35rem;
   border-radius: 2rem;
   overflow: hidden;

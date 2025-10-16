@@ -69,7 +69,7 @@ const Hero = () => {
           transition={{ duration: 1.5, ease: "easeOut" }}
         >
           <div className="image-container">
-            <img src="/hero-image.png" alt="Beautiful home" />
+            <img src="/hero-image.jpg" alt="Beautiful home" />
             <div className="circle-bg" />
           </div>
         </motion.div>
